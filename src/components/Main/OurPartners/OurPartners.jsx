@@ -1,7 +1,7 @@
 import { GreyText, Line, Container } from "../styleCss"
 import styled from "styled-components"
-import minGos from "../../assets/img/Group39877.svg"
-import digRus from "../../assets/img/Group39876.svg"
+import minGos from "../../../assets/img/Group39877.svg"
+import digRus from "../../../assets/img/Group39876.svg"
 
 const DivOurPart = styled.div`
     width: 355px;
