@@ -1,0 +1,39 @@
+.footer{
+    padding: 84px 30px 47px  ;
+    background-color: #261E1A;
+    color: #FFFFFF;
+}
+
+
+.footer-hr{
+    color: #5E5E5E;
+    background-color: #5E5E5E;
+}
+
+
+.boton{
+    margin-top: 47px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-items{
+    display: flex;
+
+}
+
+.left-item{
+    margin-right: 5rem;
+    color: #FFFFFF;
+}
+
+
+.right-items{
+    display: flex;
+
+}
+
+.right-item{
+    margin-left: 5rem;
+    color: #FFFFFF;
+}
