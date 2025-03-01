@@ -39,5 +39,5 @@ const App = () => {
     </div>
   );
 };
-//комент
+//комент fdjkop
 export default App;
