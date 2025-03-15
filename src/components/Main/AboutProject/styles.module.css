@@ -1,0 +1,59 @@
+.container{
+    margin-bottom: 165,
+    }
+
+.anchor{
+    font-size: 16;
+    vertical-align: top
+}
+
+.signature{
+    font-size: 20;
+    align-self: flex-end;
+    margin-bottom: 50.81;
+}
+
+.red-text {
+    font-family: 'BebasNeueCyrillic', sans-serif;
+    color: #A70000;
+    font-size: 70px;
+}
+
+.div-info {
+    position:relative;
+    margin:auto;
+    margin-top: 44.84px;
+    line-height:1.4em;
+    column-count:2;
+    column-gap:114px;
+    max-width: 1014px;
+    max-height: 822px;
+    height: 100%;
+}
+
+.div-paragraf {
+    max-width: 450px;
+    font-size: 18px;
+    font-family: 'Involve', serif;
+    margin-bottom: 10px;
+}
+
+.button-author{
+    color: #ffffff;
+    width: 285px;
+    height: 55.8px;
+    margin-top: 44.84px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+.div-button{
+    max-width: 1014;
+    margin: auto;
+}
+
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
