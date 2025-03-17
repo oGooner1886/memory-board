@@ -2,6 +2,7 @@ import stylesGeneral from '../styleCss.module.css'
 import style from './style.module.css'
 import minGos from "../../../assets/img/Group39877.svg"
 import digRus from "../../../assets/img/Group39876.svg"
+import rectangle from "../../../assets/img/Rectangle39589.png"
 import variablesText from './variablesText'
 
 
@@ -13,11 +14,12 @@ export default function OurPartners(){
         <div className={`${stylesGeneral.container} ${style.container}`}>
             <span className={`${stylesGeneral['grey-text']} ${style.anchor}`}>{varT.anchor}</span>
             <hr className={`${stylesGeneral.line} ${style.line}`}/>
-            <div className={style['container-our-part']}>
+            <div className={style['div-our-part']}>
                 {lstImgPartners.map((url,indx)=>{
                     return(
-                    <div className={style['div-our-part']} key={indx}>
-                        {url&&<img src={url}/>}
+                    <div  key={indx} className={style['container-our-part']}>
+                        <img src={rectangle} className={style["big-image"]} />
+                        {url&&<img src={url} className={style["small-image"]} />}
                     </div>)
                 })}
                 </div>
