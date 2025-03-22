@@ -18,3 +18,9 @@
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+@media (max-width: 768px) {
+  #root {
+    padding: 15px;
+  }
+}

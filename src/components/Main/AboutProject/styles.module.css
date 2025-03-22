@@ -1,22 +1,26 @@
 .container{
-    margin-bottom: 165,
+    margin-bottom: 165px;
     }
 
-.anchor{
-    font-size: 16;
-    vertical-align: top
+.title{
+    line-height: 1.08;
 }
 
-.signature{
-    font-size: 20;
-    align-self: flex-end;
-    margin-bottom: 50.81;
+.anchor{
+    font-size: 16px;
+    vertical-align: top;
+    padding-right: 475px;
 }
 
 .red-text {
     font-family: 'BebasNeueCyrillic', sans-serif;
     color: #A70000;
     font-size: 70px;
+}
+
+.signature{
+    font-size: 20px;
+    padding-left: 125px;
 }
 
 .div-info {
@@ -56,14 +60,31 @@
     margin: auto;
 }
 
-.title{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    line-height: 1.08
-}
-
 @media (max-width: 768px) {
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.03;
+    }
+    br {
+        display: none;
+    }
+    .anchor {
+        font-size: 14px;
+        white-space: nowrap;
+        margin-bottom: 18px;
+        padding-right: 0px;
+    }
+    .red-text {
+        font-size: 36px;
+    }
+    .signature {
+        font-size: 14px;
+        margin-top: 25px;
+        padding-left: 0px;
+    }
+
     .div-info {
         position:relative;
         margin:auto;
@@ -74,5 +95,9 @@
         max-width: 1014px;
         max-height: 822px;
         height: 100%;
+    }
+
+    .button-author {
+        width: 100%;
     }
   }
