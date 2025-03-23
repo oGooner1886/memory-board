@@ -56,4 +56,7 @@
   .line{
     display: none;
   }
+  .div-hidden{
+    display: none;
+  }
 }

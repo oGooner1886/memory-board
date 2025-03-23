@@ -17,7 +17,13 @@ export default function OurPartners(){
             <div className={style['div-our-part']}>
                 {lstImgPartners.map((url,indx)=>{
                     return(
-                    <div  key={indx} className={style['container-our-part']}>
+                    <div
+                        key={indx}
+                        className={
+                            `
+                                ${style['container-our-part']}
+                                ${!url&&style['div-hidden']}
+                            `}>
                         <img src={rectangle} className={style["big-image"]} />
                         {url&&<img src={url} className={style["small-image"]} />}
                     </div>)
