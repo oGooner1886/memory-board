@@ -1,5 +1,4 @@
 .container{
-    height: 100%;
     margin-top: 165px;
 }
 
@@ -55,7 +54,6 @@
     height: 212px;
   }
   .line{
-    opacity: 0;
-    margin: 0%;
+    display: none;
   }
 }

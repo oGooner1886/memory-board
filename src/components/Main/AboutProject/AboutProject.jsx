@@ -1,6 +1,6 @@
-import styles from './styles.module.css'
 import variablesText from './variablesText.js'
 import stylesGeneral from '../styleCss.module.css'
+import styles from './styles.module.css'
 
 
 const varT = variablesText
