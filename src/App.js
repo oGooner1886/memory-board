@@ -1,4 +1,5 @@
-import img from './img/main.png';
+import React from 'react';
+import mainImage from './img/main.png';
 import img1 from './img/Аджимуратов.png';
 import img2 from './img/Бабенко.png';
 import img3 from './img/Мешечко.png';
@@ -7,37 +8,43 @@ import img5 from './img/Черкасов.png';
 import './App.css';
 
 const App = () => {
-  const images = [img1, img2, img3, img4, img5];
-  const names = [
-    { id: 1, fullName: 'Аджимуратов Зеит Агезекович' },
-    { id: 2, fullName: 'Бабенко Алексей Андреевич' },
-    { id: 3, fullName: 'Мешечко Терентий Иванович' },
-    { id: 4, fullName: 'Уваров Иван Васильвевич' },
-    { id: 5, fullName: 'Черкасов Алексей Андреевич' },
+  const heroes = [
+    { id: 1, fullName: 'Аджимуратов Зеит Агезекович', image: img1 },
+    { id: 2, fullName: 'Бабенко Алексей Андреевич', image: img2 },
+    { id: 3, fullName: 'Мешечко Терентий Иванович', image: img3 },
+    { id: 4, fullName: 'Уваров Иван Васильвевич', image: img4 },
+    { id: 5, fullName: 'Черкасов Алексей Андреевич', image: img5 },
   ];
 
   return (
     <div className="App">
       <div className="img-container">
-        <img className="imgmain" src={img} alt="Top" />
+        <img className="imgmain" src={mainImage} alt="Главное изображение" />
       </div>
-      <div className="text-container">
-        <p id="save">//Сохраним подвиг в памяти</p>
-        <h1 className="history">Истории героев</h1>
-        <hr />
+      
+      <div className="text-content">
+        <p className="save-text">//Сохраним подвиг в памяти</p>
+        <h1 className="history-title">Истории героев</h1>
+        <hr className="title-divider" />
       </div>
+      
       <div className="image-gallery">
-        {images.map((image, index) => (
-          <div key={index} className="image-item">
-            <div className="name-item">
-              <p>{names[index].id}. {names[index].fullName}</p>
+        {heroes.map((hero) => (
+          <div key={hero.id} className="hero-card">
+            <div className="hero-info">
+              <p className="hero-name">{hero.id}. {hero.fullName}</p>
+              <hr className="name-divider" />
             </div>
-            <img src={image} alt={`Image ${index + 1}`} style={{ width: '356px', margin: '10px' }} />
+            <img 
+              src={hero.image} 
+              alt={`Портрет ${hero.fullName}`}
+              className="hero-image" 
+            />
           </div>
         ))}
       </div>
     </div>
   );
 };
-//комент fdjkop
+
 export default App;
