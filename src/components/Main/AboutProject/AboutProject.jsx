@@ -11,7 +11,7 @@ export default function AboutProject(){
         <div className={`${stylesGeneral.container} ${styles.container}`}>
             <div className={styles.title}>
                 <span className={`${stylesGeneral['grey-text']} ${styles.anchor}`}>{varT.anchorTitle}</span>
-                <span className={`${styles['red-text']}`}>{varT.greatQuote[0]} {varT.greatQuote[1]}</span>
+                <span className={`${styles['red-text']}`}>{varT.greatQuote[0]} <br /> {varT.greatQuote[1]}</span>
                 <br />
                 <span className={styles['red-text']}>{varT.greatQuote[2]} {varT.greatQuote[3]}</span>
                 <span className={`${stylesGeneral['grey-text']} ${styles.signature}`}>{varT.authorGreatQuote}</span>
