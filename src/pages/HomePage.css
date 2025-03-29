@@ -1,28 +1,27 @@
-@font-face{
-    src: url('../fonts/ofont.ru_Bebas\ Neue.ttf');
-    font-family: 'Bebas Neue Cyrillic';
+@font-face {
+  src: url("../../public/fonts/ofont.ru_Bebas\ Neue.ttf");
+  font-family: "Bebas Neue Cyrillic";
 }
 
-
-.container{
-    padding: 40px 30px;
+.container {
+  padding: 40px 30px;
 }
 
-.text{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.text-title{
-    width: 900px;
-    font-family: 'Bebas Neue Cyrillic';
-    color: #A70000;
-    font-size: 7rem;
-    text-align: left;
+.text-title {
+  width: 900px;
+  font-family: "Bebas Neue Cyrillic";
+  color: #a70000;
+  font-size: 7rem;
+  text-align: left;
 }
 
-.text-p{
-    font-family: 'Involve';
-    margin-top: 42px;
+.text-p {
+  font-family: "Bebas Neue Cyrillic";
+  margin-top: 42px;
 }
