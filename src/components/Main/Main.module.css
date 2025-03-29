@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 18px;
+}
+
+.imgContainer {
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.imgmain {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 11px;
+}
+
+.textContent {
+  margin-top: 128px;
+}
+
+.saveText {
+  color: #878787;
+  font-size: 16px;
+  font-family: "Involve";
+  font-weight: 400;
+  text-align: left;
+  line-height: 25px;
+}
+
+.title {
+  margin-top: 30px;
+  color: #a70000;
+  font-size: 96px;
+  font-family: "Bebas Neue Cyrillic";
+  text-transform: uppercase;
+}
+.titleDivider {
+  margin-top: 45px;
+  border-top: 1px solid #cecece;
+}
+.imageGallery {
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  img {
+    filter: sepia(0.5);
+  }
+}
+
+.heroInfo {
+  font-family: Involve;
+  font-weight: 400;
+  font-size: 18px;
+  color: #4c4c4c;
+}
+.heroName {
+  padding-bottom: 14px;
+  border-bottom: 1px solid #4c4c4c;
+}
+.heroImage {
+  margin-top: 14px;
+  width: 340px;
+}
+
+/* 
+
+@media (max-width: 374px) {
+
+    .text-container,
+    .name-item,
+    #save-text,
+    .history-title {
+        text-align: left;
+        padding-right: 15px;
+        width: 100%; 
+    }
+
+    .App {
+        align-items: flex-end;
+        padding-right: 15px;
+    }
+
+  
+    .image-gallery {
+        align-items: flex-end;
+    }
+
+    
+    .name-divider {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+    #save-text {
+    font-size: 16px;
+    }
+    .history-title {
+        color: #A70000;
+        font-size: 46px; 
+    }
+
+    .img-container {
+        margin: 10px 0; 
+        align-items: center;
+    }
+
+    .imgmain {
+        width: 100%;
+        height: auto;
+    }
+
+    .name-item {
+        font-size: 12px;
+    }
+
+    #save {
+        margin-left: 0; 
+    }
+
+ */

@@ -7,15 +7,11 @@ import "./index.css";
 function App() {
   return (
     <Router>
-      <div className="app">
-        <main className="app__main">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-          </Routes>
-        </main>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
 
-        {/* <Footer /> */}
-      </div>
+      {/* <Footer /> */}
     </Router>
   );
 }
