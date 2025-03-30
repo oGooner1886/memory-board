@@ -8,6 +8,10 @@ import img3 from "../../assets/Мешечко.png";
 import img4 from "../../assets/Уваров.png";
 import img5 from "../../assets/Черкасов.png";
 import { Link } from "react-router-dom";
+import AboutProject from "./AboutProject/AboutProject";
+import OurPartners from "./OurPartners/OurPartners";
+import { useLocation } from "react-router-dom";
+import { useEffect, useRef } from "react";
 
 const Main = () => {
   const heroes = [
@@ -17,6 +21,13 @@ const Main = () => {
     { id: 4, fullName: "Уваров Иван Васильвевич", image: img4 },
     { id: 5, fullName: "Черкасов Алексей Андреевич", image: img5 },
   ];
+  const location = useLocation();
+  const sectionRef = useRef(null);
+  useEffect(() => {
+    if (location.hash === "#history") {
+      sectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location.hash]);
   return (
     <div className={style.wrapper}>
       <div className={style.imgContainer}>
@@ -27,7 +38,7 @@ const Main = () => {
         />
       </div>
 
-      <div className={style.textContent}>
+      <div className={style.textContent} ref={sectionRef} id="#history">
         <h6 className={style.saveText}>// Сохраним подвиг в памяти</h6>
         <h1 className={style.title}>Истории героев</h1>
         <div className={style.titleDivider} />
@@ -49,6 +60,8 @@ const Main = () => {
           </Link>
         ))}
       </div>
+      <AboutProject />
+      <OurPartners />
     </div>
   );
 };

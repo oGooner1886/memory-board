@@ -1,0 +1,39 @@
+.footer {
+  padding: 84px 30px 47px;
+  background-color: #261e1a;
+  color: #ffffff;
+  margin-top: 200px;
+}
+
+.footerHr {
+  color: #5e5e5e;
+  background-color: #5e5e5e;
+}
+
+.links {
+  margin-top: 47px;
+  border-top: 1px solid #5e5e5e;
+  padding-top: 56px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Involve";
+  font-size: 18px;
+}
+
+.leftItems {
+  display: flex;
+}
+
+.leftItem {
+  margin-right: 5rem;
+  color: #ffffff;
+}
+
+.rightItems {
+  display: flex;
+}
+
+.rightItem {
+  margin-left: 5rem;
+  color: #ffffff;
+}

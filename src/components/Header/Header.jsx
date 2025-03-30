@@ -9,13 +9,13 @@ const Header = () => {
         <img src="./img/Logo.svg" alt="LOGO" className="logo"></img>
       </Link>
       <nav className={style.navbar}>
-        <Link to="/" className={style.navbarItem}>
+        <Link to="/#about" className={style.navbarItem}>
           О проекте
         </Link>
-        <Link to="/" className={style.navbarItem}>
+        <Link to="/#history" className={style.navbarItem}>
           Истории
         </Link>
-        <Link to="/" className={style.navbarItem}>
+        <Link to="/#partners" className={style.navbarItem}>
           Партнеры
         </Link>
         <Link to="/" className={style.navbarItem}>

@@ -1,0 +1,124 @@
+.wrapper {
+  max-width: 1860px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 165px;
+  margin-bottom: 165px;
+}
+
+.title {
+  line-height: 1.08;
+  margin-bottom: 45px;
+  padding-bottom: 45px;
+  border-bottom: 1px solid #cecece;
+}
+.anchor {
+  font-family: "Involve", serif;
+  color: #878787;
+  font-size: 16px;
+  padding-right: 275px;
+  position: relative;
+  top: -35px;
+}
+.quote {
+  font-family: "Bebas Neue Cyrillic";
+  text-transform: uppercase;
+  color: #a70000;
+  font-size: 70px;
+}
+
+.signature {
+  font-size: 19px;
+  font-family: "Involve", serif;
+  color: #878787;
+  line-height: 25px;
+  font-weight: 400;
+  display: flex;
+  justify-content: flex-end;
+  letter-spacing: -0.15px;
+  flex-direction: row;
+  position: relative;
+  top: -35px;
+}
+
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: "Involve", serif;
+  color: #434343;
+  line-height: 143%;
+  font-size: 18px;
+  letter-spacing: -0.3px;
+  gap: 100px;
+  display: flex;
+}
+.about p {
+  flex: 1;
+  width: 50%;
+}
+.aboutAuthor {
+  background-color: #261e1a;
+  color: #ffffff;
+  width: 285px;
+  height: 55.8px;
+  margin-top: 45px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.3px;
+}
+.aboutAuthor:hover {
+  background-color: #a70000;
+  transition: all 0.2s ease-in-out;
+}
+
+/* 
+@media (max-width: 768px) {
+  .container {
+    margin-top: 90px;
+    margin-bottom: 0px;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.03;
+    margin-bottom: 30px;
+  }
+  br {
+    display: none;
+  }
+  .anchor {
+    font-size: 14px;
+    white-space: nowrap;
+    margin-bottom: 18px;
+    padding-right: 0px;
+  }
+  .red-text {
+    font-size: 36px;
+  }
+  .signature {
+    font-size: 14px;
+    margin-top: 25px;
+    padding-left: 0px;
+  }
+
+  .div-info {
+    margin-top: 6.7px;
+    column-count: 1;
+    height: 100%;
+  }
+
+  .div-paragraf {
+    max-width: 400px;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 23.3px;
+  }
+
+  .button-author {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+} */
