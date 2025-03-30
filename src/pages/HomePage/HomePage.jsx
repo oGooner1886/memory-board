@@ -5,12 +5,14 @@ import Title from "../../components/Title/Title";
 import Main from "../../components/Main/Main";
 import Footer from "../../components/Footer/Footer";
 
-const HomePage = () => {
+const HomePage = ({veteran}) => {
+  
+  
   return (
     <>
       <Title />
       <Header />
-      <Main />
+      <Main veteran={veteran}/>
       <Footer />
     </>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import "./index.css";
@@ -6,12 +6,13 @@ import VeteranPage from "./pages/VeteranPage/VeteranPage";
 import data from "./person.json";
 
 function App() {
+  const [veteran] = useState(data);
   
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        {data.map((el) => (
+        <Route path="/" element={<HomePage veteran={veteran} />} />
+        {veteran.map((el) => (
           <Route
             path={`/veteran/${el.uid}`}
             element={

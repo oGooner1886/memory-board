@@ -13,7 +13,9 @@ import OurPartners from "./OurPartners/OurPartners";
 import { useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
 
-const Main = () => {
+const Main = ({ veteran }) => {
+  console.log(veteran);
+
   const heroes = [
     { id: 1, fullName: "Аджимуратов Зеит Агезекович", image: img1 },
     { id: 2, fullName: "Бабенко Алексей Андреевич", image: img2 },
@@ -45,15 +47,19 @@ const Main = () => {
       </div>
 
       <div className={style.imageGallery}>
-        {heroes.map((hero) => (
-          <Link key={hero.id} className={style.heroCard} to={`/veteran/${hero.id}`}>
+        {veteran.map((hero) => (
+          <Link
+            key={hero.uid}
+            className={style.heroCard}
+            to={`/veteran/${hero.uid}`}
+          >
             <div className={style.heroInfo}>
               <h5 className={style.heroName}>
-                0{hero.id}. {hero.fullName}
+                0{hero.uid}. {hero.fullName}
               </h5>
             </div>
             <img
-              src={hero.image}
+              src={"../../img/" + hero.gallery}
               alt={`Портрет ${hero.fullName}`}
               className={style.heroImage}
             />
