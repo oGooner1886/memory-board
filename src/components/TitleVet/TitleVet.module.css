@@ -1,0 +1,37 @@
+.wrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  margin-top: 70px;
+  padding-bottom: 82px;
+  border-bottom: 1px solid #cecece;
+}
+.subtitle {
+  font-family: Inter;
+  color: #878787;
+  font-size: 20px;
+}
+.subtitle span {
+  color: #a70000;
+}
+.titleContainer {
+  display: flex;
+  align-items: center;
+}
+.title {
+  margin-top: 42px;
+  color: #a70000;
+  font-size: 150px;
+  line-height: 0.9;
+  font-family: "Bebas Neue Cyrillic";
+  letter-spacing: -3px;
+}
+.rank {
+  font-family: Involve;
+  height: 44px;
+  color: #878787;
+  margin-left: 60px;
+  margin-top: 25px;
+  border: 1px solid #878787;
+  border-radius: 55px;
+  padding: 16px 38px;
+}

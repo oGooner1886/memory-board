@@ -1,0 +1,27 @@
+.volunteer {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.avatar {
+  width: 105px;
+  height: 105px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.info {
+}
+.title {
+  font-family: Involve;
+  font-weight: 500;
+  font-size: 18px;
+  color: #a70000;
+}
+.subtitle {
+  margin-top: 11px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #434343;
+  line-height: 1.4;
+  letter-spacing: -0.2px;
+}

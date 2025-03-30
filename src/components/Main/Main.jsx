@@ -46,7 +46,7 @@ const Main = () => {
 
       <div className={style.imageGallery}>
         {heroes.map((hero) => (
-          <Link key={hero.id} className={style.heroCard}>
+          <Link key={hero.id} className={style.heroCard} to={`/veteran/${hero.id}`}>
             <div className={style.heroInfo}>
               <h5 className={style.heroName}>
                 0{hero.id}. {hero.fullName}

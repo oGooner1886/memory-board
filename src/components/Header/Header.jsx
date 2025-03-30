@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import style from "./Header.module.css";
-
+import logo from "../../assets/Logo.svg";
 const Header = () => {
   return (
     <header className={style.wrapper}>
       <Link to="/" className={style.logo}>
-        <img src="./img/Logo.svg" alt="LOGO" className="logo"></img>
+        <img src={logo} alt="LOGO" className="logo"></img>
       </Link>
       <nav className={style.navbar}>
         <Link to="/#about" className={style.navbarItem}>

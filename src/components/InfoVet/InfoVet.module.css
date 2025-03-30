@@ -1,0 +1,35 @@
+.wrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  margin-top: 90px;
+  display: flex;
+
+  justify-content: space-between;
+}
+.avatar {
+  filter: sepia(50%);
+  width: 600px;
+}
+.date {
+  font-family: "Bebas Neue Cyrillic";
+  color: #434343;
+  line-height: 0.9;
+  font-size: 60px;
+}
+.description {
+  display: flex;
+  width: 550px;
+  font-family: Involve;
+  flex-direction: column;
+}
+.descriptionVeteran {
+  border-bottom: 1px solid #cecece;
+  padding-bottom: 30px;
+  height: min-content;
+  color: #434343;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
+}
+.descriptionVolunteer{
+  margin-top: 23px;
+}
