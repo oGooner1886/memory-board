@@ -1,0 +1,19 @@
+.wrapper {
+  padding: 33px 0 33px;
+  border-top: 1px solid #adadad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 37px;
+}
+.avatar {
+  mix-blend-mode: multiply;
+}
+.title {
+  font-family: Inter;
+  font-size: 36px;
+  line-height: 0.9;
+  letter-spacing: -0.4px;
+  font-weight: 300;
+  color: #434343;
+}

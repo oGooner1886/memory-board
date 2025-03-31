@@ -49,7 +49,7 @@
 .imageGallery {
   margin-top: 60px;
   display: flex;
-  
+
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
@@ -58,10 +58,9 @@
     filter: sepia(0.5);
   }
 }
-.heroCard{
+.heroCard {
   flex: 1 1 calc(33.333% - 20px);
   min-width: 250px;
-  
 }
 .heroInfo {
   font-family: Involve;
