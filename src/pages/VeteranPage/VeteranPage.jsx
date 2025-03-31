@@ -12,6 +12,7 @@ const VeteranPage = ({ id, fullName, gallery, rank, awards, volunteer, birthDay,
       <Header />
       <TitleVet fullName={fullName} rank={rank} />
       <InfoVet key={id} gallery={gallery} birthDay={birthDay} deathDay={deathDay} descr={descr}  volunteer={volunteer}/>
+      
     <Footer/>
     </div>
   );
