@@ -5,6 +5,7 @@ import "./index.css";
 import VeteranPage from "./pages/VeteranPage/VeteranPage";
 import data from "./person.json";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import AboutAuthorProject from "./pages/AboutAuthorProject/AboutAuthorProject";
 
 function App() {
   const [veteran] = useState(data);
@@ -33,6 +34,7 @@ function App() {
             }
           />
         ))}
+        <Route path='/authors' element={<AboutAuthorProject/>}/>
       </Routes>
     </Router>
   );

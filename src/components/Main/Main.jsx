@@ -6,8 +6,9 @@ import AboutProject from "./AboutProject/AboutProject";
 import OurPartners from "./OurPartners/OurPartners";
 import { useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
+import Title from "../Title/Title";
 
-const Main = ({ veteran }) => {
+const Main = React.memo(({ veteran }) => {
   const location = useLocation();
 
   const sectionRef = useRef(null);
@@ -25,7 +26,11 @@ const Main = ({ veteran }) => {
           className={style.imgmain}
           src={background}
           alt="Главное изображение"
+          loading="lazy"
         />
+        <div className={style.imgContainerText}>
+          <Title />
+        </div>
       </div>
 
       <div className={style.textContent} ref={sectionRef} id="#history">
@@ -50,6 +55,7 @@ const Main = ({ veteran }) => {
               src={"../../img/" + hero.gallery}
               alt={`Портрет ${hero.fullName}`}
               className={style.heroImage}
+              loading="lazy"
             />
           </Link>
         ))}
@@ -58,7 +64,7 @@ const Main = ({ veteran }) => {
       <OurPartners />
     </div>
   );
-};
+});
 
 // <img src={'../../images/menu' + gallery} alt="" />
 

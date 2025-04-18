@@ -1,0 +1,92 @@
+.wrapper {
+  max-width: 1800px;
+  margin: 0 auto;
+  margin-top: 71px;
+}
+
+.subtitle {
+  font-family: Inter;
+  color: #878787;
+  font-size: 16px;
+}
+.subtitle span {
+  color: #a70000;
+}
+
+.title {
+  color: #a70000;
+  line-height: 0.9;
+  margin-top: 45px;
+  font-family: "Bebas Neue Cyrillic";
+  font-size: 96px;
+  border-bottom: 1px solid #cecece;
+  padding-bottom: 45px;
+}
+
+.container {
+  margin-top: 60px;
+  /* text-align: center; */
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 30px 20px;
+  grid-template-areas:
+    "one two . three ."
+    ". four five . six"
+    "seven eight . nine ."
+    ". . . . ten";
+}
+
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.ten {
+  grid-area: ten;
+}
+
+.member {
+  font-family: Involve;
+  text-align: center;
+  margin-bottom: 20px;
+
+  color: #4c4c4c;
+}
+.member h3 {
+  font-size: 18px;
+  color: #a70000;
+  border-bottom: 1px solid #cecece;
+  padding-bottom: 13px;
+  width: 100%;
+}
+.member h3 a {
+  color: #a70000;
+}
+.member p {
+  font-size: 16px;
+  padding-top: 13px;
+}

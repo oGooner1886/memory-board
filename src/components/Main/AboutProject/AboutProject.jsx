@@ -1,6 +1,6 @@
 import variablesText from "./variablesText.js";
 import style from "./AboutProject.module.css";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
 
 const varT = variablesText;
@@ -11,6 +11,9 @@ const AboutProject = () => {
 
   useEffect(() => {
     if (location.hash === "#about") {
+      sectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+    if (location.hash === "#authors") {
       sectionRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [location.hash]);
@@ -37,7 +40,9 @@ const AboutProject = () => {
           России. Они напоминают нам о неоценимом вкладе каждого человека,
           жившего в те годы, в общую победу.
           <div>
-            <button className={style.aboutAuthor}>{varT.aboutAuthor}</button>
+            <Link to={'/authors'} id="#authors">
+              <button className={style.aboutAuthor}>{varT.aboutAuthor}</button>
+            </Link>
           </div>
         </div>
         <div>

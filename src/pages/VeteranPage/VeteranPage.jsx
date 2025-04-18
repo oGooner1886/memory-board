@@ -6,19 +6,36 @@ import InfoVet from "../../components/InfoVet/InfoVet";
 import Footer from "../../components/Footer/Footer";
 import AwardsVeteran from "../../components/AwardsVeteran/AwardsVeteran";
 
-const VeteranPage = ({ id, fullName, gallery, rank, awards, volunteer, birthDay, deathDay, descr }) => {
-    
-  return (
-    <div>
-      <Header />
-      <TitleVet fullName={fullName} rank={rank} />
-      <InfoVet key={id} gallery={gallery} birthDay={birthDay} deathDay={deathDay} descr={descr}  volunteer={volunteer}/>
-      {awards.length > 0 && <AwardsVeteran awards={awards}/>}
-      
+const VeteranPage = React.memo(
+  ({
+    id,
+    fullName,
+    gallery,
+    rank,
+    awards,
+    volunteer,
+    birthDay,
+    deathDay,
+    descr,
+  }) => {
+    return (
+      <div>
+        <Header />
+        <TitleVet fullName={fullName} rank={rank} />
+        <InfoVet
+          key={id}
+          gallery={gallery}
+          birthDay={birthDay}
+          deathDay={deathDay}
+          descr={descr}
+          volunteer={volunteer}
+        />
+        {awards.length > 0 && <AwardsVeteran awards={awards} />}
 
-    <Footer/>
-    </div>
-  );
-};
+        <Footer />
+      </div>
+    );
+  }
+);
 
 export default VeteranPage;

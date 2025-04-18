@@ -5,9 +5,9 @@ import logo from "../../assets/Logo.svg";
 const Footer = () => {
   return (
     <footer className={style.footer}>
-      <Link to="/" className={style.nav__link}>
+      {/* <Link to="/" className={style.nav__link}>
         <img src={logo} alt="Logo"></img>
-      </Link>
+      </Link> */}
 
       <div className={style.links}>
         <nav>
@@ -26,7 +26,7 @@ const Footer = () => {
             <Link to="/#partners" className={style.rightItem}>
               Партнеры
             </Link>
-            <Link to="/" className={style.rightItem}>
+            <Link to="/#authors" className={style.rightItem}>
               Авторы проекта
             </Link>
           </ul>

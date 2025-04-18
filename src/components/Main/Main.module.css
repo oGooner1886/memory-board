@@ -13,6 +13,12 @@
   max-width: 1800px;
   width: 100%;
   margin: 0 auto;
+  position: relative;
+}
+.imgContainerText{
+  position: absolute;
+  top: 0%;
+  
 }
 
 .imgmain {
@@ -20,6 +26,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 11px;
+  
 }
 
 .textContent {
