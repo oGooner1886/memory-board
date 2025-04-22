@@ -20,6 +20,7 @@ const AboutProject = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.title}>
+        <h6 className={style.anchor_mobile} ref={sectionRef} id="#about">// О проекте</h6>
         <span className={style.anchor} ref={sectionRef} id="#about">
           {varT.anchorTitle}{" "}
         </span>
@@ -40,12 +41,19 @@ const AboutProject = () => {
           России. Они напоминают нам о неоценимом вкладе каждого человека,
           жившего в те годы, в общую победу.
           <div>
-            <Link to={'/authors'} id="#authors">
+            <br />
+          <div className={style.text_mobile}>
+          Мы гордимся и чтим память о наших предках, которые стали примером
+          мужества, достоинства и преданности. Память об их подвиге сохранена в
+          этом цифровом альбоме. Если вы хотите рассказать историю героя вашей
+          семьи, необходимо заполнить анкету по ссылке.
+        </div>
+            <Link to={"/authors"} id="#authors">
               <button className={style.aboutAuthor}>{varT.aboutAuthor}</button>
             </Link>
           </div>
         </div>
-        <div>
+        <div className={style.text_hide}>
           Мы гордимся и чтим память о наших предках, которые стали примером
           мужества, достоинства и преданности. Память об их подвиге сохранена в
           этом цифровом альбоме. Если вы хотите рассказать историю героя вашей

@@ -4,7 +4,7 @@ import digRus from "../../../assets/svg/DR.svg";
 import rectangle from "../../../assets/svg/Rectangle39589.png";
 import { useLocation } from "react-router-dom";
 import { useEffect, useRef } from "react";
-const lstImgPartners = [minGos, digRus, false, false, false];
+const lstImgPartners = [minGos, digRus];
 
 const OurPartners = () => {
 

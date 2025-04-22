@@ -10,7 +10,7 @@
 .title {
   font-family: "Bebas Neue Cyrillic";
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 150px;
   line-height: 0.9;
   width: 1172px;
@@ -22,6 +22,36 @@
   font-size: 20px;
   line-height: 1;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
   font-style: normal;
+}
+.description_mobile {
+  display: none;
+}
+@media (max-width: 576px) {
+  .wrapper {
+    position: absolute;
+    top: -50px;
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    padding: 40px 0 0 0;
+    
+  }
+  .title {
+    font-size: 44px;
+    letter-spacing: .3px;
+    color: #a70000;
+  }
+  .description {
+    display: none;
+  }
+  .description_mobile{
+    display: block;
+    font-family: "Involve";
+    font-size: 14px;
+    color: #4c4c4c;
+    margin-top: 23px;
+    width: 100%;
+  }
 }

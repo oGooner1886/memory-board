@@ -33,3 +33,19 @@
 .descriptionVolunteer{
   margin-top: 23px;
 }
+@media (max-width: 576px) {
+  .wrapper{
+    padding: 0 10px;
+    flex-wrap: wrap;
+  }
+  .avatar{
+    width: 100%;
+  }
+  .date{
+    
+    font-size: 35px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  } 
+}

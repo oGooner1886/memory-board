@@ -15,10 +15,9 @@
   margin: 0 auto;
   position: relative;
 }
-.imgContainerText{
+.imgContainerText {
   position: absolute;
   top: 0%;
-  
 }
 
 .imgmain {
@@ -26,7 +25,6 @@
   height: 100%;
   object-fit: cover;
   border-radius: 11px;
-  
 }
 
 .textContent {
@@ -65,6 +63,7 @@
     filter: sepia(0.5);
   }
 }
+
 .heroCard {
   flex: 1 1 calc(33.333% - 20px);
   min-width: 250px;
@@ -75,6 +74,7 @@
   font-size: 18px;
   color: #4c4c4c;
 }
+
 .heroName {
   padding-bottom: 14px;
   border-bottom: 1px solid #4c4c4c;
@@ -84,6 +84,46 @@
   width: 340px;
 }
 
+
+@media (max-width: 576px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+  .imgContainerText {
+    width: 100%;
+  }
+  .imgmain {
+    margin-top: 180px;
+    border-radius: 15px;
+  }
+  .textContent {
+    margin-top: 90px;
+  }
+  .saveText {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 34px;
+    margin-top: 16px;
+  }
+  .heroName {
+    font-size: 16px;
+    width: 100%;
+  }
+  .heroImage {
+    width: 100%;
+  }
+  .titleDivider {
+    margin-top: 30px;
+    border-top: 1px solid #cecece;
+  }
+  .imageGallery {
+    margin-top: 30px;
+  }
+  .anchor_mobile {
+    display: block;
+  }
+}
 /* 
 
 @media (max-width: 374px) {

@@ -17,3 +17,21 @@
   font-weight: 300;
   color: #434343;
 }
+
+@media (max-width: 576px) {
+  .wrapper {
+    padding: 0 10px;
+  }
+
+  .avatar {
+    /* width: 30%;
+    height: 30%; */
+  }
+  .avatar img {
+    width: 30px;
+    height: 30px;
+  }
+  .title {
+    font-size: 16px;
+  }
+}

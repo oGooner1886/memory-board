@@ -15,3 +15,15 @@
   text-transform: uppercase;
   margin-bottom: 100px;
 }
+
+@media (max-width: 576px) {
+  .wrapper{
+    padding: 0 10px;
+  }
+  
+  .title{
+    font-size: 46px;
+    letter-spacing: normal;
+  }
+ 
+}

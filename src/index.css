@@ -87,8 +87,14 @@ h6 {
   font-weight: 400;
 }
 
-
 body {
   width: 1860px;
   background-color: #fffaf0;
+}
+
+
+@media (max-width: 576px){
+  body {
+    width: 100%;
+  }
 }

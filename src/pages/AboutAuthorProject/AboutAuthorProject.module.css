@@ -90,3 +90,22 @@
   font-size: 16px;
   padding-top: 13px;
 }
+
+@media (max-width: 576px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+.title {
+  
+  font-size: 46px;
+  border-bottom: 1px solid #cecece;
+  padding-bottom: 45px;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+}
