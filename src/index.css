@@ -92,9 +92,12 @@ body {
   background-color: #fffaf0;
 }
 
-
-@media (max-width: 576px){
+@media (max-width: 576px) {
   body {
     width: 100%;
+  }
+  body,
+  html {
+    overflow-x: hidden;
   }
 }
