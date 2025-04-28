@@ -47,9 +47,9 @@
     flex-wrap: wrap;
     gap: 20px;
     flex-direction: column;
+    margin-bottom: 150px;
   }
   .container-our-part {
-    
     width: 100%;
   }
 }
